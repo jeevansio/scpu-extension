@@ -19,13 +19,6 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	sccomp_tb
 
-} {} {}} D:/CoDWork/SCPUSIM/ctrl.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/ctrl.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module ctrl
-
-Top level modules:
-	ctrl
-
 } {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccomp.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module sccomp

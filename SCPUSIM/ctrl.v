@@ -34,6 +34,7 @@ module ctrl(Op, Funct, Zero,
 
    wire i_nor  = rtype& Funct[5]&~Funct[4]&~Funct[3]& Funct[2]& Funct[1]& Funct[0]; // nor
    wire i_jr   = rtype&~Funct[5]&~Funct[4]& Funct[3]&~Funct[2]&~Funct[1]&~Funct[0]; // jr
+   wire i_jalr = rtype&~Funct[5]&~Funct[4]& Funct[3]&~Funct[2]&~Funct[1]& Funct[0]; // jalr
    
 
   // i format
@@ -50,7 +51,7 @@ module ctrl(Op, Funct, Zero,
    wire i_jal  = ~Op[5]&~Op[4]&~Op[3]&~Op[2]& Op[1]& Op[0];  // jal
 
   // generate control signals
-  assign RegWrite   = rtype | i_lw | i_addi | i_ori | i_jal; // register write
+  assign RegWrite   = rtype | i_lw | i_addi | i_ori | i_jal | i_jalr; // register write
   
   assign MemWrite   = i_sw;                           // memory write
   assign ALUSrc     = i_lw | i_sw | i_addi | i_ori;   // ALU A is from instruction immediate
@@ -66,14 +67,14 @@ module ctrl(Op, Funct, Zero,
   // WDSel_FromMEM 2'b01
   // WDSel_FromPC  2'b10 
   assign WDSel[0] = i_lw;
-  assign WDSel[1] = i_jal;
+  assign WDSel[1] = i_jal | i_jalr;
 
   // NPC_PLUS4   2'b00
   // NPC_BRANCH  2'b01
   // NPC_JUMP    2'b10
   // NPC_JR      2'b11
-  assign NPCOp[0] = i_beq & Zero | i_bne & ~Zero | i_jr;
-  assign NPCOp[1] = i_j | i_jal | i_jr;
+  assign NPCOp[0] = i_beq & Zero | i_bne & ~Zero | i_jr | i_jalr;
+  assign NPCOp[1] = i_j | i_jal | i_jr | i_jalr;
   
   // ALU_NOP   4'b0000
   // ALU_ADD   4'b0001
