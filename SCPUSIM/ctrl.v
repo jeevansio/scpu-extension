@@ -33,6 +33,8 @@ module ctrl(Op, Funct, Zero,
    wire i_subu = rtype& Funct[5]&~Funct[4]&~Funct[3]&~Funct[2]& Funct[1]& Funct[0]; // subu
 
    wire i_nor  = rtype& Funct[5]&~Funct[4]&~Funct[3]& Funct[2]& Funct[1]& Funct[0]; // nor
+   wire i_jr   = rtype&~Funct[5]&~Funct[4]& Funct[3]&~Funct[2]&~Funct[1]&~Funct[0]; // jr
+   
 
   // i format
    wire i_addi = ~Op[5]&~Op[4]& Op[3]&~Op[2]&~Op[1]&~Op[0]; // addi
@@ -69,8 +71,9 @@ module ctrl(Op, Funct, Zero,
   // NPC_PLUS4   2'b00
   // NPC_BRANCH  2'b01
   // NPC_JUMP    2'b10
-  assign NPCOp[0] = i_beq & Zero | i_bne & ~Zero;
-  assign NPCOp[1] = i_j | i_jal;
+  // NPC_JR      2'b11
+  assign NPCOp[0] = i_beq & Zero | i_bne & ~Zero | i_jr;
+  assign NPCOp[1] = i_j | i_jal | i_jr;
   
   // ALU_NOP   4'b0000
   // ALU_ADD   4'b0001

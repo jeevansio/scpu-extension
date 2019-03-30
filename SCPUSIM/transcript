@@ -10,6 +10,20 @@
 # //
 # OpenFile D:/CoDWork/SCPUSIM/SCPUSIM.mpf 
 # Loading project SCPUSIM
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of EXT.v was successful.
+# Compile of mux.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccpu.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 13 compiles, 0 failed with no errors. 
 vsim -gui -novopt work.sccomp_tb
 # vsim -gui -novopt work.sccomp_tb 
 # Refreshing D:/CoDWork/SCPUSIM/work.sccomp_tb
@@ -40,6 +54,47 @@ vsim -gui -novopt work.sccomp_tb
 # Loading work.im
 add wave -position insertpoint  \
 sim:/sccomp_tb/clk \
+sim:/sccomp_tb/rstn
+add wave -position insertpoint  \
+sim:/sccomp_tb/reg_sel
+add wave -position insertpoint  \
+sim:/sccomp_tb/reg_data
+view -new wave
+# can't read "vsimPriv(:grid)": no such element in array
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/clk \
+sim:/sccomp_tb/U_SCCOMP/instr \
+sim:/sccomp_tb/U_SCCOMP/PC \
+sim:/sccomp_tb/U_SCCOMP/MemWrite \
+sim:/sccomp_tb/U_SCCOMP/dm_addr \
+sim:/sccomp_tb/U_SCCOMP/dm_din \
+sim:/sccomp_tb/U_SCCOMP/dm_dout
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/clk \
+sim:/sccomp_tb/U_SCCOMP/instr \
+sim:/sccomp_tb/U_SCCOMP/PC \
+sim:/sccomp_tb/U_SCCOMP/MemWrite \
+sim:/sccomp_tb/U_SCCOMP/dm_addr \
+sim:/sccomp_tb/U_SCCOMP/dm_din \
+sim:/sccomp_tb/U_SCCOMP/dm_dout
+quit -sim
+vsim -gui -novopt work.sccomp_tb
+# vsim -gui -novopt work.sccomp_tb 
+# Loading work.sccomp_tb
+# Loading work.sccomp
+# Loading work.sccpu
+# Loading work.ctrl
+# Loading work.PC
+# Loading work.NPC
+# Loading work.RF
+# Loading work.mux4
+# Loading work.EXT
+# Loading work.mux2
+# Loading work.alu
+# Loading work.dm
+# Loading work.im
+add wave -position insertpoint  \
+sim:/sccomp_tb/clk \
 sim:/sccomp_tb/rstn \
 sim:/sccomp_tb/reg_sel \
 sim:/sccomp_tb/reg_data
@@ -51,20 +106,156 @@ sim:/sccomp_tb/U_SCCOMP/dm_addr \
 sim:/sccomp_tb/U_SCCOMP/dm_din \
 sim:/sccomp_tb/U_SCCOMP/dm_dout \
 sim:/sccomp_tb/U_SCCOMP/instr
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/U_CTRL/i_jr
 run 2000
 # r[ 2] = 0x00000005,
 # r[ 3] = 0x0000000c,
 # r[ 7] = 0x00000003,
-# r[ 4] = 0x00000007,
-# r[ 5] = 0x00000004,
-# r[ 5] = 0x0000000b,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
 # r[ 4] = 0x00000000,
 # r[ 4] = 0x00000001,
-# r[ 7] = 0x0000000c,
-# r[ 7] = 0x00000007,
-# dmem[0x      50] = 0x00000007,
-# r[ 2] = 0x00000007,
+# r[ 7] = 0x00000001,
+# r[ 7] = 0xfffffffc,
+# dmem[0x      50] = 0xfffffffc,
+# r[ 2] = 0xfffffffc,
 # r[31] = 0x00000040,
-# dmem[0x      54] = 0x00000007,
+# dmem[0x      54] = 0xfffffffc,
 # Break in Module sccomp_tb at D:/CoDWork/SCPUSIM/sccomp_tb.v line 54
+run 2000
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 4] = 0x00000001,
+# r[ 7] = 0x00000001,
+# r[ 7] = 0xfffffffc,
+# dmem[0x      50] = 0xfffffffc,
+# r[ 2] = 0xfffffffc,
+# r[31] = 0x00000040,
+# dmem[0x      54] = 0xfffffffc,
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write in to the invalid channel.
+#    Time: 3400 ns  Iteration: 0  Instance: /sccomp_tb
+# Break in Module sccomp_tb at D:/CoDWork/SCPUSIM/sccomp_tb.v line 54
+restart -f
+run 2000
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/U_PC/NPC \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/U_PC/PC
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/U_RF/reg_data
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/MemWrite \
+sim:/sccomp_tb/U_SCCOMP/PC \
+sim:/sccomp_tb/U_SCCOMP/clk \
+sim:/sccomp_tb/U_SCCOMP/dm_addr \
+sim:/sccomp_tb/U_SCCOMP/dm_din \
+sim:/sccomp_tb/U_SCCOMP/dm_dout \
+sim:/sccomp_tb/U_SCCOMP/instr
+add wave -position insertpoint  \
+sim:/sccomp_tb/clk \
+sim:/sccomp_tb/rstn \
+sim:/sccomp_tb/reg_sel \
+sim:/sccomp_tb/reg_data
+run 2000
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
 # Causality operation skipped due to absense of debug database file
+restart -f
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/U_CTRL/i_jr
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/PC \
+sim:/sccomp_tb/U_SCCOMP/U_SCPU/NPC
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/instr
+add wave -position insertpoint  \
+sim:/sccomp_tb/U_SCCOMP/MemWrite \
+sim:/sccomp_tb/U_SCCOMP/PC \
+sim:/sccomp_tb/U_SCCOMP/clk \
+sim:/sccomp_tb/U_SCCOMP/dm_addr \
+sim:/sccomp_tb/U_SCCOMP/dm_din \
+sim:/sccomp_tb/U_SCCOMP/dm_dout
+add wave -position insertpoint  \
+sim:/sccomp_tb/clk \
+sim:/sccomp_tb/reg_data \
+sim:/sccomp_tb/reg_sel \
+sim:/sccomp_tb/rstn
+run 2000
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 7] = 0x00000003,
+# r[ 4] = 0xfffffff8,
+# r[ 5] = 0x00000008,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 0] = 0x00000000,
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+quit -sim
