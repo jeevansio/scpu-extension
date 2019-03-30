@@ -1,11 +1,4 @@
-D:/CoDWork/SCPUSIM/sccpu.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccpu.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module sccpu
-
-Top level modules:
-	sccpu
-
-} {} {}} D:/CoDWork/SCPUSIM/RF.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/RF.v
+D:/CoDWork/SCPUSIM/RF.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/RF.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module RF
 
@@ -19,19 +12,19 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	sccomp_tb
 
-} {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccomp.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module sccomp
-
-Top level modules:
-	sccomp
-
 } {} {}} D:/CoDWork/SCPUSIM/ctrl.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\ctrl.v}
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module ctrl
 
 Top level modules:
 	ctrl
+
+} {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccomp.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module sccomp
+
+Top level modules:
+	sccomp
 
 } {} {}} D:/CoDWork/SCPUSIM/im.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/im.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -40,7 +33,7 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	im
 
-} {} {}} D:/CoDWork/SCPUSIM/ctrl_encode_def.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/ctrl_encode_def.v
+} {} {}} D:/CoDWork/SCPUSIM/ctrl_encode_def.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\ctrl_encode_def.v}
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 } {} {}} D:/CoDWork/SCPUSIM/dm.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/dm.v
@@ -64,6 +57,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	EXT
 
+} {} {}} D:/CoDWork/SCPUSIM/alu.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\alu.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
 } {} {}} D:/CoDWork/SCPUSIM/mux.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/mux.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module mux2
@@ -76,13 +76,6 @@ Top level modules:
 	mux4
 	mux8
 	mux16
-
-} {} {}} D:/CoDWork/SCPUSIM/alu.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\alu.v}
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module alu
-
-Top level modules:
-	alu
 
 } {} {}} D:/CoDWork/SCPUSIM/PC.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/PC.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012

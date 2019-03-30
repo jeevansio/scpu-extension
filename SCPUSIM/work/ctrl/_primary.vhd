@@ -8,7 +8,7 @@ entity ctrl is
         RegWrite        : out    vl_logic;
         MemWrite        : out    vl_logic;
         EXTOp           : out    vl_logic;
-        ALUOp           : out    vl_logic_vector(2 downto 0);
+        ALUOp           : out    vl_logic_vector(3 downto 0);
         NPCOp           : out    vl_logic_vector(1 downto 0);
         ALUSrc          : out    vl_logic;
         GPRSel          : out    vl_logic_vector(1 downto 0);

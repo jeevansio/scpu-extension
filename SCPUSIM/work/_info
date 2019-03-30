@@ -12,40 +12,40 @@ n@_opt
 OE;O;10.1a;51
 Z1 dD:\modeltech_10.1a\win32
 valu
-VBn`ji@JZJ?f27Qk1NoHCM0
+VW1H8`<zcXiLKMd8Hi_iC>1
 r1
 31
-I0DlVoT8V?IFAD8JUZPDzT0
+IXfMNA8J=bm]nnG0SM?A192
 Z2 dD:\CoDWork\SCPUSIM
-w1551514804
-8D:\CoDWork\SCPUSIM\alu.v
-FD:\CoDWork\SCPUSIM\alu.v
+w1553918551
+8D:/CoDWork/SCPUSIM/alu.v
+FD:/CoDWork/SCPUSIM/alu.v
 L0 3
 Z3 OL;L;10.1c;51
 Z4 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 !s85 0
-!s100 VPheSY]ShHbe<_hB`6Ga33
-!s90 -reportprogress|300|-work|work|-vopt|D:\CoDWork\SCPUSIM\alu.v|
-!s108 1553871398.692000
-!s107 ctrl_encode_def.v|D:\CoDWork\SCPUSIM\alu.v|
+!s100 @PFZB2iN0IEVO<FcUFUnI0
+!s108 1553928090.633000
+!s107 ctrl_encode_def.v|D:/CoDWork/SCPUSIM/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/alu.v|
 !i10b 1
 vctrl
-VTO[@3bGZ_LO<2bRLO7WEQ3
+V1_Cz1Za8M2bRNTZlbXB`33
 r1
 31
-I0C[Z73>igD_zkb6YnSQ_z2
+IUhoFj^4;4z:Mi5]86REGJ2
 R2
-w1553870143
-8D:\CoDWork\SCPUSIM\ctrl.v
-FD:\CoDWork\SCPUSIM\ctrl.v
+w1553922649
+8D:/CoDWork/SCPUSIM/ctrl.v
+FD:/CoDWork/SCPUSIM/ctrl.v
 L0 4
 R3
 R4
 !s85 0
-!s100 fOc8NVVMDQg=X5MFJjN5:2
-!s90 -reportprogress|300|-work|work|-vopt|D:\CoDWork\SCPUSIM\ctrl.v|
-!s108 1553871399.002000
-!s107 D:\CoDWork\SCPUSIM\ctrl.v|
+!s100 YEh8`b@j?7;VAFJfAcSD[2
+!s108 1553928090.918000
+!s107 D:/CoDWork/SCPUSIM/ctrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/ctrl.v|
 !i10b 1
 vdm
 VQ5kzjohU1HQB?iGHI7LOU0
@@ -62,7 +62,7 @@ R4
 !s85 0
 !s100 cO8cGIT]UHi2TEaXFj<cT3
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/dm.v|
-!s108 1553871401.102000
+!s108 1553928093.499000
 !s107 D:/CoDWork/SCPUSIM/dm.v|
 !i10b 1
 vEXT
@@ -81,7 +81,7 @@ n@e@x@t
 !s85 0
 !s100 U0FMN7P<IcHcS2N@WJl8R1
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/EXT.v|
-!s108 1553871399.367000
+!s108 1553928091.268000
 !s107 D:/CoDWork/SCPUSIM/EXT.v|
 !i10b 1
 vim
@@ -99,7 +99,7 @@ R3
 R4
 !s100 >eFV=X=1X>Ef9z3e?28ZL2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/im.v|
-!s108 1553871401.366000
+!s108 1553928093.704000
 !s107 D:/CoDWork/SCPUSIM/im.v|
 !i10b 1
 vmux16
@@ -113,7 +113,7 @@ L0 71
 R3
 r1
 31
-Z8 !s108 1553871399.601000
+Z8 !s108 1553928091.601000
 Z9 !s107 D:/CoDWork/SCPUSIM/mux.v|
 Z10 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/mux.v|
 R4
@@ -190,7 +190,7 @@ n@n@p@c
 !s85 0
 !s100 bC@Z2f^a:PclOI0][o]US2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/NPC.v|
-!s108 1553871400.166000
+!s108 1553928092.362000
 !s107 ctrl_encode_def.v|D:/CoDWork/SCPUSIM/NPC.v|
 !i10b 1
 vPC
@@ -209,7 +209,7 @@ n@p@c
 !s85 0
 !s100 U4:HanoD@B2a]Lj>Cj:852
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/PC.v|
-!s108 1553871400.405000
+!s108 1553928092.662000
 !s107 D:/CoDWork/SCPUSIM/PC.v|
 !i10b 1
 vRF
@@ -228,7 +228,7 @@ n@r@f
 !s85 0
 !s100 fWXk5cD1Qf6^B3`KY6BC<3
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/RF.v|
-!s108 1553871400.600000
+!s108 1553928092.903000
 !s107 D:/CoDWork/SCPUSIM/RF.v|
 !i10b 1
 vsccomp
@@ -246,42 +246,42 @@ R4
 !s85 0
 !s100 L[bMS?5c`EC2B`k2A?QJz3
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/sccomp.v|
-!s108 1553871401.547000
+!s108 1553928093.913000
 !s107 D:/CoDWork/SCPUSIM/sccomp.v|
 !i10b 1
 vsccomp_tb
 VciK9E@b07zQnz0QWN@GCk0
 r1
 31
-IT2WX@7P80ZCKa7mAG]VJR3
+I^_OnL=EolT8=6_b<UXBUR1
 R2
-w1553871382
+w1553918633
 8D:\CoDWork\SCPUSIM\sccomp_tb.v
 FD:\CoDWork\SCPUSIM\sccomp_tb.v
 L0 3
 R3
 R4
 !s85 0
+!s100 Z@7FZnBXRZJEkckF_4V_m3
 !s90 -reportprogress|300|-work|work|-vopt|D:\CoDWork\SCPUSIM\sccomp_tb.v|
 !i10b 1
-!s100 gKWn?iNPcgDEOA<VYBWDB1
-!s108 1553871401.790000
+!s108 1553928094.185000
 !s107 D:\CoDWork\SCPUSIM\sccomp_tb.v|
 vsccpu
 V2nlHBHNd:OILV4c`<oPFP3
 r1
 31
-IRU0^^TVRZ]jL:^SVX7lMF2
+IE^02zm[hOMf@>bU?MUQ2U3
 R2
-w1552223856
-8D:/CoDWork/SCPUSIM/sccpu.v
-FD:/CoDWork/SCPUSIM/sccpu.v
+w1553928081
+8D:\CoDWork\SCPUSIM\sccpu.v
+FD:\CoDWork\SCPUSIM\sccpu.v
 L0 1
 R3
 R4
 !s85 0
-!s100 85QPl=QjkkOk:dcJVnKTP0
-!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/SCPUSIM/sccpu.v|
-!s108 1553871400.836000
-!s107 D:/CoDWork/SCPUSIM/sccpu.v|
+!s100 ND0>mmg2TLQMeTce5f;Xb3
+!s108 1553928093.194000
+!s107 D:\CoDWork\SCPUSIM\sccpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:\CoDWork\SCPUSIM\sccpu.v|
 !i10b 1
