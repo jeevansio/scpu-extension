@@ -1,16 +1,23 @@
-D:/CoDWork/SCPUSIM/sccpu.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccpu.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module sccpu
-
-Top level modules:
-	sccpu
-
-} {} {}} D:/CoDWork/SCPUSIM/RF.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/RF.v
+D:/CoDWork/SCPUSIM/RF.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/RF.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module RF
 
 Top level modules:
 	RF
+
+} {} {}} D:/CoDWork/SCPUSIM/sccomp_tb.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\sccomp_tb.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module sccomp_tb
+
+Top level modules:
+	sccomp_tb
+
+} {} {}} D:/CoDWork/SCPUSIM/ctrl.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\ctrl.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
 
 } {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccomp.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -26,7 +33,10 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	im
 
-} {} {}} D:/CoDWork/SCPUSIM/NPC.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/NPC.v
+} {} {}} D:/CoDWork/SCPUSIM/ctrl_encode_def.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\ctrl_encode_def.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} D:/CoDWork/SCPUSIM/NPC.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\NPC.v}
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module NPC
 
@@ -46,6 +56,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 Top level modules:
 	EXT
+
+} {} {}} D:/CoDWork/SCPUSIM/alu.v {1 {vlog -work work -vopt {D:\CoDWork\SCPUSIM\alu.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
 
 } {} {}} D:/CoDWork/SCPUSIM/mux.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/mux.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012

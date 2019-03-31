@@ -12,6 +12,7 @@ entity ctrl is
         NPCOp           : out    vl_logic_vector(1 downto 0);
         ALUSrc          : out    vl_logic;
         GPRSel          : out    vl_logic_vector(1 downto 0);
-        WDSel           : out    vl_logic_vector(1 downto 0)
+        WDSel           : out    vl_logic_vector(1 downto 0);
+        ALUSrcA         : out    vl_logic
     );
 end ctrl;

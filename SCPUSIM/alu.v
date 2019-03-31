@@ -22,6 +22,9 @@ module alu(A, B, ALUOp, C, Zero);
 
           `ALU_NOR:  C = ~(A | B);                   // NOR
           `ALU_LUI:  C = {B[15:0], 16'b0};           // LUI
+
+          `ALU_SLL:  C = B << A;                     // SLL
+          `ALU_SRL:  C = B >> A;                     // SRL
           default:   C = A;                          // Undefined
       endcase
    end // end always

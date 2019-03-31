@@ -22,7 +22,8 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    wire [1:0]  WDSel;       // (register) write data selection
    wire [1:0]  GPRSel;      // general purpose register selection
    
-   wire        ALUSrc;      // ALU source for A
+   wire        ALUSrc;      // ALU source for A actually it is B
+   wire        ALUSrcA;     // ALU source for A i mean real A
    wire        Zero;        // ALU ouput zero
 
    wire [31:0] NPC;         // next PC
@@ -39,6 +40,9 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    wire [31:0] WD;          // register write data
    wire [31:0] RD1;         // register data specified by rs
    wire [31:0] B;           // operator for ALU B
+   wire [31:0] A;           // operator for ALU A
+   wire [5:0]  sa;          // shamt
+   wire [31:0] sa32;        // 32bit shamt
    
    assign Op = instr[31:26];  // instruction
    assign Funct = instr[5:0]; // funct
@@ -48,12 +52,18 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    assign Imm16 = instr[15:0];// 16-bit immediate
    assign IMM = instr[25:0];  // 26-bit immediate
    
+   assign sa = instr[10:6];   // 5-bit shamt
+
+   assign sa32 = {27'b0, instr[10:6]};
+                              //32 bit shamt
+
    // instantiation of control unit
    ctrl U_CTRL ( 
       .Op(Op), .Funct(Funct), .Zero(Zero),
       .RegWrite(RegWrite), .MemWrite(MemWrite),
       .EXTOp(EXTOp), .ALUOp(ALUOp), .NPCOp(NPCOp), 
-      .ALUSrc(ALUSrc), .GPRSel(GPRSel), .WDSel(WDSel)
+      .ALUSrc(ALUSrc), .GPRSel(GPRSel), .WDSel(WDSel),
+      .ALUSrcA(ALUSrcA)
    );
    
    // instantiation of PC
@@ -96,9 +106,15 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
       .d0(writedata), .d1(Imm32), .s(ALUSrc), .y(B)
    );   
    
+   // mux for alu a
+   mux2 #(32) u_mux_alu_a (
+      .d0(RD1), .d1(sa32), .s(ALUSrcA), .y(A)
+   );
+
+
    // instantiation of alu
    alu U_ALU ( 
-      .A(RD1), .B(B), .ALUOp(ALUOp), .C(aluout), .Zero(Zero)
+      .A(A), .B(B), .ALUOp(ALUOp), .C(aluout), .Zero(Zero)
    );
 
 endmodule
