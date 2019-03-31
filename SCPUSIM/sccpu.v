@@ -23,7 +23,7 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    wire [1:0]  GPRSel;      // general purpose register selection
    
    wire        ALUSrc;      // ALU source for A actually it is B
-   wire        ALUSrcA;     // ALU source for A i mean real A
+   wire [1:0]  ALUSrcA;     // ALU source for A i mean real A
    wire        Zero;        // ALU ouput zero
 
    wire [31:0] NPC;         // next PC
@@ -43,6 +43,7 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    wire [31:0] A;           // operator for ALU A
    wire [5:0]  sa;          // shamt
    wire [31:0] sa32;        // 32bit shamt
+   wire [31:0] sa_from_rs;  // 32bit shamt from low 5 bits of rs
    
    assign Op = instr[31:26];  // instruction
    assign Funct = instr[5:0]; // funct
@@ -53,6 +54,8 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    assign IMM = instr[25:0];  // 26-bit immediate
    
    assign sa = instr[10:6];   // 5-bit shamt
+   assign sa_from_rs = {27'b0, RD1[4:0]};
+                              //32bit shamt from low 5 bits of rs
 
    assign sa32 = {27'b0, instr[10:6]};
                               //32 bit shamt
@@ -107,8 +110,8 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    );   
    
    // mux for alu a
-   mux2 #(32) u_mux_alu_a (
-      .d0(RD1), .d1(sa32), .s(ALUSrcA), .y(A)
+   mux4 #(32) u_mux_alu_a (
+      .d0(RD1), .d1(sa32), .d2(sa_from_rs), .d3(32'b0), .s(ALUSrcA), .y(A)
    );
 
 

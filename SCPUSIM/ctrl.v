@@ -18,7 +18,7 @@ module ctrl(Op, Funct, Zero,
    output [3:0] ALUOp;    // ALU opertion
    output [1:0] NPCOp;    // next pc operation
    output       ALUSrc;   // ALU source for A actually it is B
-   output       ALUSrcA;  // ALU source for A i mean real A
+   output [1:0] ALUSrcA;  // ALU source for A i mean real A
 
    output [1:0] GPRSel;   // general purpose register selection
    output [1:0] WDSel;    // (register) write data selection
@@ -40,6 +40,8 @@ module ctrl(Op, Funct, Zero,
 
    wire i_sll  = rtype&~Funct[5]&~Funct[4]&~Funct[3]&~Funct[2]&~Funct[1]&~Funct[0]; // sll
    wire i_srl  = rtype&~Funct[5]&~Funct[4]&~Funct[3]&~Funct[2]& Funct[1]&~Funct[0]; // srl
+   wire i_sllv = rtype&~Funct[5]&~Funct[4]&~Funct[3]& Funct[2]&~Funct[1]&~Funct[0]; // sllv
+   wire i_srlv = rtype&~Funct[5]&~Funct[4]&~Funct[3]& Funct[2]& Funct[1]&~Funct[0]; // srlv
 
   // i format
    wire i_addi = ~Op[5]&~Op[4]& Op[3]&~Op[2]&~Op[1]&~Op[0]; // addi
@@ -60,13 +62,16 @@ module ctrl(Op, Funct, Zero,
   // generate control signals
   assign RegWrite   = rtype | i_lw | i_addi | i_ori | i_jal | i_jalr | i_andi | i_slti | i_lui; // register write
   
-  assign MemWrite   = i_sw;                                                     // memory write
+  assign MemWrite   = i_sw;                                                                     // memory write
   assign ALUSrc     = i_lw | i_sw | i_addi | i_ori | i_andi | i_slti | i_lui;                   // ALU A is from instruction immediate
   assign EXTOp      = i_addi | i_lw | i_sw | i_andi | i_slti | i_lui;                           // signed extension
 
-  // ALUSrc_RD1  1'b0
-  // ALUSrc_sa32 1'b1
-  assign ALUSrcA  = i_sll | i_srl;
+  // ALUSrc_RD1             2'b00
+  // ALUSrc_sa32            2'b01
+  // ALUSrc_low5bitofrs     2'b10
+  assign ALUSrcA[0]  = i_sll | i_srl;
+  assign ALUSrcA[1]  = i_sllv | i_srlv;
+
 
   // GPRSel_RD   2'b00
   // GPRSel_RT   2'b01
@@ -97,14 +102,14 @@ module ctrl(Op, Funct, Zero,
 
   // ALU_NOR   4'b1000
   // ALU_LUI   4'b1001
-  // ALU_SLL   4'b1010
-  // ALU_SRL   4'b1011
+  // ALU_SLL/V 4'b1010
+  // ALU_SRL/V 4'b1011
 
   
-  assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu | i_andi | i_slti | i_lui | i_srl;
-  assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu | i_bne | i_andi | i_sll | i_srl;
+  assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu | i_andi | i_slti | i_lui | i_srl | i_srlv;
+  assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu | i_bne | i_andi | i_sll | i_srl | i_sllv | i_srlv;
   assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu | i_slti;
 
-  assign ALUOp[3] = i_nor | i_lui | i_sll | i_srl;
+  assign ALUOp[3] = i_nor | i_lui | i_sll | i_srl | i_sllv | i_srlv;
 
 endmodule
