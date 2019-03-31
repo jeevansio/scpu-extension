@@ -21,6 +21,7 @@ module alu(A, B, ALUOp, C, Zero);
           `ALU_SLTU: C = ({1'b0, A} < {1'b0, B}) ? 32'd1 : 32'd0;
 
           `ALU_NOR:  C = ~(A | B);                   // NOR
+          `ALU_LUI:  C = {B[15:0], 16'b0};           // LUI
           default:   C = A;                          // Undefined
       endcase
    end // end always

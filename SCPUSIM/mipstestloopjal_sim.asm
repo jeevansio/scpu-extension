@@ -11,7 +11,7 @@ main:   addi $2, $0, 5          # initialize $2 = 5     00      0       20020005
         add  $5, $5, $4         # $5 = 4 + 7 = 11       05      14      00a42820
         beq  $5, $7, label2     # shouldn't be taken    06      18      10a7000a
         slt  $4, $3, $4         # $4 = (12 < 7) = 0     07      1c      0064202a
-        slti $8, $2, 15
+        lui  $8, 15
         beq  $4, $0, label1     # should be taken       08      20      10800001
         addi $5, $0, 0          # shouldn't happen      09      24      20050000
 label1: slt  $4, $7, $2         # $4 = (3 < 5) = 1      0A      28      00e2202a
