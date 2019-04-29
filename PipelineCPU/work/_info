@@ -1,0 +1,438 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CoDWork\SCPUSIM
+valu
+Z1 !s100 :5dUK_ihcCB;Q<_VFg7ge0
+Z2 I6L39`gCDHYez]gzIQE6>n3
+Z3 VW1H8`<zcXiLKMd8Hi_iC>1
+Z4 dD:\CoDWork\PipelineCPU
+Z5 w1553998571
+Z6 8D:/CoDWork/PipelineCPU/alu.v
+Z7 FD:/CoDWork/PipelineCPU/alu.v
+L0 3
+Z8 OL;L;10.1c;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/alu.v|
+Z10 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z11 !s108 1556331827.482000
+Z12 !s107 ctrl_encode_def.v|D:/CoDWork/PipelineCPU/alu.v|
+!i10b 1
+!s85 0
+vmux16
+Z13 !s100 CYY[NMA8lb0Xli[Wk6^3l0
+Z14 I;7`U^3A^LV_F6A:B9m4^I2
+Z15 V`6=HBldE>cXC;m]K0;QI>0
+R4
+Z16 w1550765554
+Z17 8D:/CoDWork/PipelineCPU/mux.v
+Z18 FD:/CoDWork/PipelineCPU/mux.v
+L0 71
+R8
+r1
+31
+Z19 !s108 1556331827.994000
+Z20 !s107 D:/CoDWork/PipelineCPU/mux.v|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/mux.v|
+R10
+!i10b 1
+!s85 0
+vmux2
+Z22 !s100 <6KT]=5W0IV_>azn31SG72
+Z23 II^16h2i^?UHUkJ[^Z19ON1
+Z24 VT8RWJBjAIeM]>7U=5kBkT1
+R4
+R16
+R17
+R18
+L0 2
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+vmux4
+Z25 !s100 MhF@o48Ue08RJF9^o>NWS1
+Z26 I^N[1B^lCNm_oeD=EWHhK93
+Z27 V@m74j;^3XFJ7>OzQXh6V`0
+R4
+R16
+R17
+R18
+L0 15
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+vmux8
+Z28 !s100 OU7O33>m?]jX0NIo<emGO0
+Z29 IhbbgS^FJGiL>4G6Zmm18T0
+Z30 VOh>X<_n?620Z_^H7^I9KH2
+R4
+R16
+R17
+R18
+L0 40
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+vpcpu_tb
+!i10b 1
+!s100 9l@ZK4K1g`1j:A7SFlK0=3
+I93PmN43ToHYfWKXCJ5D3W2
+V=fYa7TVogVJOKYk7E2LB?0
+R4
+w1556331860
+Z31 8D:/CoDWork/PipelineCPU/sccomp_tb.v
+Z32 FD:/CoDWork/PipelineCPU/sccomp_tb.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1556331867.379000
+!s107 D:/CoDWork/PipelineCPU/sccomp_tb.v|
+Z33 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/sccomp_tb.v|
+R10
+vpipe_exe_mem_reg
+Z34 IVbeEkU;22AOU2;l4YD=Lo1
+Z35 V3Md<2;NTBOKQK86SM:dT60
+R4
+Z36 w1555811855
+Z37 8D:/CoDWork/PipelineCPU/pipeemreg.v
+Z38 FD:/CoDWork/PipelineCPU/pipeemreg.v
+L0 1
+R8
+r1
+31
+R10
+Z39 !s100 J<BVzEDEL:NJFP>9QNe`Z2
+Z40 !s108 1555814724.844000
+Z41 !s107 D:/CoDWork/PipelineCPU/pipeemreg.v|
+Z42 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeemreg.v|
+!i10b 1
+!s85 0
+vpipe_id_exe_reg
+Z43 IFc;<MJ?k9CH?dBnT0BQ_]3
+Z44 VU7HT^G[VkR`8?FT;YJcG>2
+R4
+Z45 w1555811863
+Z46 8D:/CoDWork/PipelineCPU/pipedereg.v
+Z47 FD:/CoDWork/PipelineCPU/pipedereg.v
+L0 1
+R8
+r1
+31
+R10
+Z48 !s100 ZKX9SzMM?L^<WUNeCSHdb2
+Z49 !s108 1555814724.522000
+Z50 !s107 D:/CoDWork/PipelineCPU/pipedereg.v|
+Z51 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipedereg.v|
+!i10b 1
+!s85 0
+vpipe_mem_wb_reg
+Z52 IHCgH4iO00JidTzXTZ5RmK2
+Z53 ViBZ_a8jgO]GW1=Cl^N5SI2
+R4
+Z54 w1555811875
+Z55 8D:/CoDWork/PipelineCPU/pipemwreg.v
+Z56 FD:/CoDWork/PipelineCPU/pipemwreg.v
+L0 1
+R8
+r1
+31
+R10
+Z57 !s100 cNE?ie]=JnHMH8H7P:c023
+Z58 !s108 1555814725.176000
+Z59 !s107 D:/CoDWork/PipelineCPU/pipemwreg.v|
+Z60 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipemwreg.v|
+!i10b 1
+!s85 0
+vpipedereg
+Z61 !s100 0l>N02`k3Uj1oXS29f4S^3
+Z62 Izb@aRgCQ6cKQ?3L288K]d2
+Z63 VdA2kF8^VT;Z5Bh8F016Gh1
+R4
+Z64 w1556327153
+R46
+R47
+L0 1
+R8
+r1
+31
+R51
+R10
+Z65 !s108 1556331828.592000
+R50
+!i10b 1
+!s85 0
+vpipeemreg
+Z66 !s100 o<ONa6][7izI`RHmMEeAR3
+Z67 I89DoWoNBe1WHmcB8gZnDb0
+Z68 Vk_22U9ldAB6ez[a^V`?RJ0
+R4
+Z69 w1556327370
+R37
+R38
+L0 1
+R8
+r1
+31
+R42
+R10
+Z70 !s108 1556331828.861000
+R41
+!i10b 1
+!s85 0
+vpipeexe
+Z71 !s100 [UMiTgW<m_D<gY4DUIM7A0
+Z72 IgKSZQFOnFR[`80oOQ;g]@1
+Z73 V5lbDPf9VM[ZRRDLBF1OUH1
+R4
+Z74 w1556328125
+Z75 8D:/CoDWork/PipelineCPU/pipeexe.v
+Z76 FD:/CoDWork/PipelineCPU/pipeexe.v
+L0 1
+R8
+r1
+31
+Z77 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeexe.v|
+R10
+Z78 !s108 1556331830.155000
+Z79 !s107 D:/CoDWork/PipelineCPU/pipeexe.v|
+!i10b 1
+!s85 0
+vpipeid
+Z80 !s100 Kb3^I[NkdPS[D^LNdf5Fk2
+Z81 I`KnR4[Z8=>2cSATzLF2HP3
+Z82 VEijKZ6@Igo?XdUMeklR?=2
+R4
+Z83 w1556329367
+Z84 8D:/CoDWork/PipelineCPU/pipeid.v
+Z85 FD:/CoDWork/PipelineCPU/pipeid.v
+L0 1
+R8
+r1
+31
+Z86 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeid.v|
+R10
+Z87 !s108 1556331830.452000
+Z88 !s107 D:/CoDWork/PipelineCPU/pipeid.v|
+!i10b 1
+!s85 0
+vpipeidcu
+Z89 !s100 LV<4]@e^CfeFJD]7?ijfA1
+Z90 I1S8_JRRAH2HKen@bgM7eF1
+Z91 VDDHh=P?LdJKTm]k9He>@01
+R4
+Z92 w1556330645
+Z93 8D:/CoDWork/PipelineCPU/pipeidcu.v
+Z94 FD:/CoDWork/PipelineCPU/pipeidcu.v
+L0 1
+R8
+r1
+31
+Z95 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeidcu.v|
+R10
+!i10b 1
+!s85 0
+Z96 !s108 1556331832.219000
+Z97 !s107 D:/CoDWork/PipelineCPU/pipeidcu.v|
+vpipeif
+Z98 !s100 8;<f7iTgoBLQbGaJ=KmNM1
+Z99 ITWBgzc]z_9gIOOn<EnUbX1
+Z100 V3h^_LUkI]:KP4NAnKNI>C3
+R4
+Z101 w1556326175
+Z102 8D:/CoDWork/PipelineCPU/pipeif.v
+Z103 FD:/CoDWork/PipelineCPU/pipeif.v
+L0 1
+R8
+r1
+31
+Z104 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeif.v|
+R10
+Z105 !s108 1556331830.753000
+Z106 !s107 D:/CoDWork/PipelineCPU/pipeif.v|
+!i10b 1
+!s85 0
+vpipeimem
+Z107 !s100 [EgX:OoU6MRIWc]@4;H2:2
+Z108 IOIiQ<H`YThSRf6LLGbZd91
+Z109 VD]OhlbmL?oNEC[QhP<=Dg3
+R4
+Z110 w1556325685
+Z111 8D:/CoDWork/PipelineCPU/pipeimem.v
+Z112 FD:/CoDWork/PipelineCPU/pipeimem.v
+L0 1
+R8
+r1
+31
+Z113 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeimem.v|
+R10
+Z114 !s108 1556331831.116000
+Z115 !s107 D:/CoDWork/PipelineCPU/pipeimem.v|
+!i10b 1
+!s85 0
+vpipeir
+Z116 !s100 Km;?F2TleONj_DoDIb:Si0
+Z117 IYQk?I14V_0E1C]H2I9<NH2
+Z118 VNA3idRg?g9ELEa<lVniF40
+R4
+Z119 w1556325796
+Z120 8D:/CoDWork/PipelineCPU/pipeir.v
+Z121 FD:/CoDWork/PipelineCPU/pipeir.v
+L0 1
+R8
+r1
+31
+Z122 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeir.v|
+R10
+Z123 !s108 1556331831.369000
+Z124 !s107 D:/CoDWork/PipelineCPU/pipeir.v|
+!i10b 1
+!s85 0
+vpipelinedcpu
+Z125 !s100 WkP8<WE0J>gA^WTmL5`oB0
+Z126 IRSizLZhMH]GQS<@U833JS3
+Z127 V_dk2<5>obO8]QXWZj>Joa3
+R4
+Z128 w1556331289
+Z129 8D:/CoDWork/PipelineCPU/pipelinedcpu.v
+Z130 FD:/CoDWork/PipelineCPU/pipelinedcpu.v
+L0 1
+R8
+r1
+31
+Z131 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipelinedcpu.v|
+R10
+Z132 !s108 1556331831.582000
+Z133 !s107 D:/CoDWork/PipelineCPU/pipelinedcpu.v|
+!i10b 1
+!s85 0
+vpipemem
+Z134 !s100 _2_Uj]FeW1gilVD3XUWB=2
+Z135 IzW?eFgd9Hd1NNSeDPiHLa1
+Z136 VN]kW<gKR>]HNQ0UOOdfC33
+R4
+Z137 w1555815863
+Z138 8D:/CoDWork/PipelineCPU/pipemem.v
+Z139 FD:/CoDWork/PipelineCPU/pipemem.v
+L0 1
+R8
+r1
+31
+Z140 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipemem.v|
+R10
+Z141 !s108 1556331829.838000
+Z142 !s107 D:/CoDWork/PipelineCPU/pipemem.v|
+!i10b 1
+!s85 0
+vpipemwreg
+Z143 !s100 SDhlW0B8TLSMd;Ukll9730
+Z144 IC5KRn28PB^WMOd?dHIkhg0
+Z145 V?_QTchRGQVg<><eg=A6g32
+R4
+Z146 w1556327541
+R55
+R56
+L0 1
+R8
+r1
+31
+R60
+R10
+Z147 !s108 1556331829.162000
+R59
+!i10b 1
+!s85 0
+vpipepc
+Z148 !s100 b3[KbG82o:??9NH]1z_;d1
+Z149 IDZgig>FOn>QVPeFN>O]EB1
+Z150 VfP<W55?cZe9QVU<ZPCNTh2
+R4
+Z151 w1556328169
+Z152 8D:/CoDWork/PipelineCPU/pipepc.v
+Z153 FD:/CoDWork/PipelineCPU/pipepc.v
+L0 1
+R8
+r1
+31
+Z154 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipepc.v|
+R10
+Z155 !s108 1556331831.922000
+Z156 !s107 D:/CoDWork/PipelineCPU/pipepc.v|
+!i10b 1
+!s85 0
+vRF
+Z157 !s100 `3ez6f?mlCBAK;zd^b`aE3
+Z158 Icl:CUH;65DbZ@?PWnWB9:2
+Z159 VEWJn__zm[8SS3Z@zFLOZT3
+R4
+Z160 w1551271794
+Z161 8D:/CoDWork/PipelineCPU/RF.v
+Z162 FD:/CoDWork/PipelineCPU/RF.v
+L0 2
+R8
+r1
+31
+Z163 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/RF.v|
+R10
+n@r@f
+Z164 !s108 1556331829.428000
+Z165 !s107 D:/CoDWork/PipelineCPU/RF.v|
+!i10b 1
+!s85 0
+vsccomp
+Z166 !s100 Q0XGk4[5emPnhfJ``zGfz0
+Z167 I^aGoE10oON_dV[m>dZahM2
+Z168 VgVBdf]6a]6QJ4FkU3fQ153
+R4
+Z169 w1551458210
+Z170 8D:/CoDWork/PipelineCPU/sccomp.v
+Z171 FD:/CoDWork/PipelineCPU/sccomp.v
+L0 1
+R8
+r1
+31
+Z172 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/sccomp.v|
+R10
+Z173 !s108 1556330500.346000
+Z174 !s107 D:/CoDWork/PipelineCPU/sccomp.v|
+!i10b 1
+!s85 0
+vsccomp_tb
+Z175 !s100 IiAEKO;36j1EoIl3`dW2z1
+Z176 IB0z:>ohJf_Id7[_CN5^gm3
+Z177 VciK9E@b07zQnz0QWN@GCk0
+R4
+Z178 w1555813557
+R31
+R32
+L0 3
+R8
+r1
+31
+R33
+R10
+Z179 !s108 1556330500.639000
+Z180 !s107 D:/CoDWork/PipelineCPU/sccomp_tb.v|
+!i10b 1
+!s85 0

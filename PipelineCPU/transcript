@@ -1,0 +1,111 @@
+# Reading D:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile D:/CoDWork/PipelineCPU/PipelineCPU.mpf 
+# Loading project PipelineCPU
+# Compile of alu.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipeexe.v failed with 1 errors.
+# Compile of pipeid.v failed with 1 errors.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipepc.v failed with 1 errors.
+# 17 compiles, 3 failed with 3 errors. 
+
+# Compile of alu.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipepc.v failed with 1 errors.
+# 17 compiles, 1 failed with 1 error. 
+# Compile of pipeid.v failed with 1 errors.
+# Compile of pipepc.v was successful.
+# Compile of alu.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipepc.v was successful.
+# 17 compiles, 0 failed with no errors. 
+# Compile of pipeid.v was successful.
+# Compile of alu.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipepc.v was successful.
+# Compile of pipeidcu.v failed with 1 errors.
+# 18 compiles, 1 failed with 1 error. 
+# Compile of pipeidcu.v failed with 1 errors.
+# Compile of pipeidcu.v failed with 2 errors.
+# Compile of pipeidcu.v was successful.
+# Compile of alu.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp_tb.v failed with 1 errors.
+# Compile of pipemem.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipepc.v was successful.
+# Compile of pipeidcu.v was successful.
+# 17 compiles, 1 failed with 1 error. 
+# Compile of sccomp_tb.v was successful.

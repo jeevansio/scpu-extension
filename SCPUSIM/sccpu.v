@@ -1,4 +1,5 @@
-module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_sel, reg_data);
+module sccpu(clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_sel, reg_data,
+             ealu, malu, walu);
          
    input      clk;          // clock
    input      rst;          // reset
@@ -60,13 +61,31 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    assign sa32 = {27'b0, instr[10:6]};
                               //32 bit shamt
 
+   
+   output [31:0] ealu, malu, walu;
+
+   wire [31:0] da, db, dimm, ea, eb, eimm;
+   wire [31:0] nb, mmo, wmo;
+   wire [4:0]  drn, ern0, ern, mrn, wrn;
+   wire [3:0]  daluc, ealuc;
+   wire [1:0]  fwda, fwdb;
+
+   wire dwreg, dm2reg, dwmem, daluimm, dshift, djal;
+   wire ewreg, em2reg, ewmem, ealuimm, eshift, ejal;
+   wire mwreg, mm2reg, mwmem;
+   wire wwreg, wm2reg;
+   wire nostall;
+
    // instantiation of control unit
    ctrl U_CTRL ( 
       .Op(Op), .Funct(Funct), .Zero(Zero),
       .RegWrite(RegWrite), .MemWrite(MemWrite),
       .EXTOp(EXTOp), .ALUOp(ALUOp), .NPCOp(NPCOp), 
       .ALUSrc(ALUSrc), .GPRSel(GPRSel), .WDSel(WDSel),
-      .ALUSrcA(ALUSrcA)
+      .ALUSrcA(ALUSrcA),
+      .mwreg(mwreg), .ewreg(ewreg), .em2reg(em2reg), .mm2reg(mm2reg), 
+      .mrn(mrn), .ern(ern), .rs(rs), .rt(rt),
+      .fwda(fwda), .fwdb(fwdb), .nostall(nostall)
    );
    
    // instantiation of PC
@@ -119,5 +138,24 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    alu U_ALU ( 
       .A(A), .B(B), .ALUOp(ALUOp), .C(aluout), .Zero(Zero)
    );
+
+   // pipeline register
+   pipe_id_exe_reg pipedereg (
+      .dwreg(dwreg), .dm2reg(dm2reg), .dwmem(dwmem), .daluc(daluc), .daluimm(daluimm), .da(da), .db(db),
+      .dimm(dimm), .drn(drn), .dshift(dshift), .djal(djal), .dpc4(dpc4), .clk(clk), .clrn(rst), 
+      .ewreg(ewreg), .em2reg(em2reg), .ewmem(ewmem), .ealuc(ealuc), .ealuimm(ealuimm), .ea(ea), .eb(eb),
+      .eimm(eimm), .ern(ern), .eshift(eshift), .ejal(ejal), .epc4(epc4)
+   );
+
+   pipe_exe_mem_reg pipemreg (
+      .ewreg(ewreg), .em2reg(em2reg), .ewmem(ewmem), .ealu(ealu), .eb(eb), .ern(ern), .clk(clk), .clrn(rst),
+      .mwreg(mwreg), .mm2reg(mm2reg), .mwmem(mwmem), .malu(malu), .mb(mb), .mrn(mrn)
+   );
+
+   pipe_mem_wb_reg pipemwreg (
+      .mwreg(mwreg), .mm2reg(mm2reg), .mmo(mmo), .malu(malu), .mrn(mrn), .clk(clk), .clrn(rst),
+      .wwreg(wwreg), .wm2reg(wm2reg), .wmo(wmo), .walu(walu), .wrn(wrn)
+   );
+   
 
 endmodule

@@ -1,0 +1,122 @@
+D:/CoDWork/PipelineCPU/pipelinedcpu.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipelinedcpu.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipelinedcpu
+
+Top level modules:
+	pipelinedcpu
+
+} {} {}} D:/CoDWork/PipelineCPU/alu.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/alu.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} D:/CoDWork/PipelineCPU/mux.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/mux.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux2
+-- Compiling module mux4
+-- Compiling module mux8
+-- Compiling module mux16
+
+Top level modules:
+	mux2
+	mux4
+	mux8
+	mux16
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeidcu.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeidcu.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeidcu
+
+Top level modules:
+	pipeidcu
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeid.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeid.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeid
+
+Top level modules:
+	pipeid
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeif.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeif.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeif
+
+Top level modules:
+	pipeif
+
+} {} {}} D:/CoDWork/PipelineCPU/pipemem.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipemem.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipemem
+
+Top level modules:
+	pipemem
+
+} {} {}} D:/CoDWork/PipelineCPU/pipedereg.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipedereg.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipedereg
+
+Top level modules:
+	pipedereg
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeimem.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeimem.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeimem
+
+Top level modules:
+	pipeimem
+
+} {} {}} D:/CoDWork/PipelineCPU/RF.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/RF.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} D:/CoDWork/PipelineCPU/sccomp_tb.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/sccomp_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pcpu_tb
+
+Top level modules:
+	pcpu_tb
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeemreg.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeemreg.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeemreg
+
+Top level modules:
+	pipeemreg
+
+} {} {}} D:/CoDWork/PipelineCPU/ctrl_encode_def.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/ctrl_encode_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} D:/CoDWork/PipelineCPU/pipemwreg.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipemwreg.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipemwreg
+
+Top level modules:
+	pipemwreg
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeexe.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeexe.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeexe
+
+Top level modules:
+	pipeexe
+
+} {} {}} D:/CoDWork/PipelineCPU/pipepc.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipepc.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipepc
+
+Top level modules:
+	pipepc
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeir.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeir.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeir
+
+Top level modules:
+	pipeir
+
+} {} {}}

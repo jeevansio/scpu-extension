@@ -5,7 +5,10 @@ module ctrl(Op, Funct, Zero,
             RegWrite, MemWrite,
             EXTOp, ALUOp, NPCOp, 
             ALUSrc, GPRSel, WDSel,
-            ALUSrcA
+            ALUSrcA,
+            mwreg, ewreg, em2reg, mm2reg, 
+            mrn, ern, rs, rt,
+            fwda, fwdb, nostall
             );
             
    input  [5:0] Op;       // opcode
@@ -22,6 +25,8 @@ module ctrl(Op, Funct, Zero,
 
    output [1:0] GPRSel;   // general purpose register selection
    output [1:0] WDSel;    // (register) write data selection
+
+   output nostall;                // to abandon an instruction
    
   // r format
    wire rtype  = ~|Op;
@@ -60,9 +65,8 @@ module ctrl(Op, Funct, Zero,
    wire i_jal  = ~Op[5]&~Op[4]&~Op[3]&~Op[2]& Op[1]& Op[0];  // jal
 
   // generate control signals
-  assign RegWrite   = rtype | i_lw | i_addi | i_ori | i_jal | i_jalr | i_andi | i_slti | i_lui; // register write
-  
-  assign MemWrite   = i_sw;                                                                     // memory write
+  assign RegWrite   = (rtype | i_lw | i_addi | i_ori | i_jal | i_jalr | i_andi | i_slti | i_lui) & nostall; // register write
+  assign MemWrite   = i_sw & nostall;                                                                       // memory write
   assign ALUSrc     = i_lw | i_sw | i_addi | i_ori | i_andi | i_slti | i_lui;                   // ALU A is from instruction immediate
   assign EXTOp      = i_addi | i_lw | i_sw | i_andi | i_slti | i_lui;                           // signed extension
 
@@ -111,5 +115,62 @@ module ctrl(Op, Funct, Zero,
   assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu | i_slti;
 
   assign ALUOp[3] = i_nor | i_lui | i_sll | i_srl | i_sllv | i_srlv;
+
+  input mwreg;
+  input ewreg;
+  input em2reg;
+  input mm2reg;
+
+  input [4:0] mrn;
+  input [4:0] ern;
+  input [4:0] rs;
+  input [4:0] rt;
+
+  output [1:0] fwda;             // forwarding a
+  output [1:0] fwdb;             // forwarding b
+  
+  reg [1:0] fwda;             // forwarding a
+  reg [1:0] fwdb;             // forwarding b
+
+  wire i_rs;
+  wire i_rt;
+
+  assign i_rs = i_add | i_sub | i_and | i_or | i_jr | i_addi | i_andi | i_ori | i_lw | i_sw | i_beq | i_bne;
+  assign i_rt = i_add | i_sub | i_and | i_or | i_sll | i_srl | i_sw | i_beq | i_bne;
+
+  assign nostall = ~(ewreg & em2reg & (ern != 0) & (i_rs & (ern == rs) | i_rt & (ern == rt)));
+  
+  always @ (ewreg or mwreg or ern or mrn or em2reg or mm2reg or rs or rt) begin
+	
+    fwda = 2'b00;                //default forward a: no hazards
+    if (ewreg & (ern != 0) & (ern == rs) & ~em2reg) begin
+        fwda = 2'b01;            // select exe_alu
+    end else begin
+      if (mwreg & (mrn != 0) & (mrn == rs) & ~mm2reg) begin
+        fwda = 2'b10;            // select mem_alu
+      end else begin
+        if (mwreg & (mrn != 0) & (mrn == rs) & mm2reg) begin
+          fwda = 2'b11;          // select mem_lw
+        end
+      end
+    end
+
+    fwdb = 2'b00;                //default forward b: no hazards
+    if (ewreg & (ern != 0) & (ern == rt) & ~em2reg) begin
+        fwdb = 2'b01;            // select exe_alu
+    end else begin
+      if (mwreg & (mrn != 0) & (mrn == rt) & ~mm2reg) begin
+        fwdb = 2'b10;            // select mem_alu
+      end else begin
+        if (mwreg & (mrn != 0) & (mrn == rt) & mm2reg) begin
+          fwdb = 2'b11;          // select mem_lw
+        end
+      end
+    end
+  end
+
+
+
+
 
 endmodule
