@@ -12,6 +12,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	alu
 
+} {} {}} D:/CoDWork/PipelineCPU/dffe32.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/dffe32.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module dffe32
+
+Top level modules:
+	dffe32
+
 } {} {}} D:/CoDWork/PipelineCPU/mux.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/mux.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module mux2
@@ -39,19 +46,19 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	pipeid
 
-} {} {}} D:/CoDWork/PipelineCPU/pipeif.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeif.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module pipeif
-
-Top level modules:
-	pipeif
-
 } {} {}} D:/CoDWork/PipelineCPU/pipemem.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipemem.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module pipemem
 
 Top level modules:
 	pipemem
+
+} {} {}} D:/CoDWork/PipelineCPU/pipeif.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeif.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pipeif
+
+Top level modules:
+	pipeif
 
 } {} {}} D:/CoDWork/PipelineCPU/pipedereg.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipedereg.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -60,6 +67,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	pipedereg
 
+} {} {}} D:/CoDWork/PipelineCPU/regfile.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/regfile.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
 } {} {}} D:/CoDWork/PipelineCPU/pipeimem.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeimem.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module pipeimem
@@ -67,19 +81,26 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	pipeimem
 
-} {} {}} D:/CoDWork/PipelineCPU/RF.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/RF.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module RF
-
-Top level modules:
-	RF
-
 } {} {}} D:/CoDWork/PipelineCPU/sccomp_tb.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/sccomp_tb.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module pcpu_tb
+-- Compiling module sccomp_tb
 
 Top level modules:
-	pcpu_tb
+	sccomp_tb
+
+} {} {}} D:/CoDWork/PipelineCPU/sccomp.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/sccomp.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module sccomp
+
+Top level modules:
+	sccomp
+
+} {} {}} D:/CoDWork/PipelineCPU/im.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/im.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module im
+
+Top level modules:
+	im
 
 } {} {}} D:/CoDWork/PipelineCPU/pipeemreg.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeemreg.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -88,15 +109,29 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	pipeemreg
 
-} {} {}} D:/CoDWork/PipelineCPU/ctrl_encode_def.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/ctrl_encode_def.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-
 } {} {}} D:/CoDWork/PipelineCPU/pipemwreg.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipemwreg.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module pipemwreg
 
 Top level modules:
 	pipemwreg
+
+} {} {}} D:/CoDWork/PipelineCPU/cla.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/cla.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module add
+-- Compiling module g_p
+-- Compiling module cla_2
+-- Compiling module cla_4
+-- Compiling module cla_8
+-- Compiling module cla_16
+-- Compiling module cla_32
+-- Compiling module cla32
+
+Top level modules:
+	cla32
+
+} {} {}} D:/CoDWork/PipelineCPU/ctrl_encode_def.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/ctrl_encode_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 } {} {}} D:/CoDWork/PipelineCPU/pipeexe.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/pipeexe.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -118,5 +153,12 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 Top level modules:
 	pipeir
+
+} {} {}} D:/CoDWork/PipelineCPU/dm.v {1 {vlog -work work -vopt D:/CoDWork/PipelineCPU/dm.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module dm
+
+Top level modules:
+	dm
 
 } {} {}}

@@ -8,7 +8,6 @@ entity pipeif is
         rpc             : in     vl_logic_vector(31 downto 0);
         jpc             : in     vl_logic_vector(31 downto 0);
         npc             : out    vl_logic_vector(31 downto 0);
-        pc4             : out    vl_logic_vector(31 downto 0);
-        ins             : out    vl_logic_vector(31 downto 0)
+        pc4             : out    vl_logic_vector(31 downto 0)
     );
 end pipeif;
