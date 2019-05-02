@@ -6,7 +6,7 @@ module dffe32 (d, clk, clrn, e, q);
     reg   [31:0] q;
 
     always @(posedge clrn or posedge clk)
-        if (clrn == 0) begin
+        if (clrn == 1) begin
             q <= 0;
         end else begin
             if (e) q <=d;

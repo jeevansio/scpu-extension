@@ -14,7 +14,7 @@ Z2 8D:/CoDWork/PipelineCPU/cla.v
 Z3 FD:/CoDWork/PipelineCPU/cla.v
 L0 1
 Z4 OL;L;10.1c;51
-Z5 !s108 1556715306.758000
+Z5 !s108 1556778941.700000
 Z6 !s107 D:/CoDWork/PipelineCPU/cla.v|
 Z7 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/cla.v|
 Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
@@ -36,7 +36,7 @@ R8
 !s85 0
 !s100 :5dUK_ihcCB;Q<_VFg7ge0
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/alu.v|
-!s108 1556715306.535000
+!s108 1556778941.458000
 !s107 ctrl_encode_def.v|D:/CoDWork/PipelineCPU/alu.v|
 !i10b 1
 vcla32
@@ -151,18 +151,18 @@ vdffe32
 V6]Tk:7m18<;Eoi?;I3VNB3
 r1
 31
-IAXK<l:>V6`AYNkBfFEIz71
+Ii9bT[3X4zXiYRM<hfzV8Y1
 R9
-R10
+w1556777211
 8D:/CoDWork/PipelineCPU/dffe32.v
 FD:/CoDWork/PipelineCPU/dffe32.v
 L0 1
 R4
 R8
 !s85 0
-!s100 MBH]?o86U72@OCWMo3m`l3
+!s100 hDA_j?od;CFCDDdahM0]?2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/dffe32.v|
-!s108 1556715307.867000
+!s108 1556778942.800000
 !s107 D:/CoDWork/PipelineCPU/dffe32.v|
 !i10b 1
 vdm
@@ -180,7 +180,7 @@ R8
 !s85 0
 !s100 =4n59KHkPDzNoRc9SnWdG1
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/dm.v|
-!s108 1556715308.026000
+!s108 1556778942.985000
 !s107 D:/CoDWork/PipelineCPU/dm.v|
 !i10b 1
 vg_p
@@ -216,7 +216,7 @@ R4
 R8
 !s100 @PA8aI?Eo?U3EQ]l6h^b:3
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/im.v|
-!s108 1556715308.255000
+!s108 1556778943.179000
 !s107 D:/CoDWork/PipelineCPU/im.v|
 !i10b 1
 vmux16
@@ -230,7 +230,7 @@ L0 71
 R4
 r1
 31
-Z13 !s108 1556715308.440000
+Z13 !s108 1556778943.383000
 Z14 !s107 D:/CoDWork/PipelineCPU/mux.v|
 Z15 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/mux.v|
 R8
@@ -344,7 +344,7 @@ R8
 !s85 0
 !s100 g:N21_W0_jbB?08o[9aM32
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipedereg.v|
-!s108 1556715308.925000
+!s108 1556778943.945000
 !s107 D:/CoDWork/PipelineCPU/pipedereg.v|
 !i10b 1
 vpipeemreg
@@ -362,7 +362,7 @@ R8
 !s85 0
 !s100 5WBCDhAAemC:E[Q>T7haR1
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeemreg.v|
-!s108 1556715309.120000
+!s108 1556778944.202000
 !s107 D:/CoDWork/PipelineCPU/pipeemreg.v|
 !i10b 1
 vpipeexe
@@ -380,7 +380,7 @@ R8
 !s85 0
 !s100 R@eM:bH@hP?ZU5_CJ_=gG1
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeexe.v|
-!s108 1556715309.307000
+!s108 1556778944.445000
 !s107 D:/CoDWork/PipelineCPU/pipeexe.v|
 !i10b 1
 vpipeid
@@ -398,7 +398,7 @@ R8
 !s85 0
 !s100 hGcZHLDF5iBTI[6gD;EzM2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeid.v|
-!s108 1556715309.503000
+!s108 1556778944.623000
 !s107 D:/CoDWork/PipelineCPU/pipeid.v|
 !i10b 1
 vpipeidcu
@@ -416,25 +416,25 @@ R8
 !s85 0
 !s100 SH5m]@@oZ]KJ67odM0W;S2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeidcu.v|
-!s108 1556715309.742000
+!s108 1556778944.866000
 !s107 D:/CoDWork/PipelineCPU/pipeidcu.v|
 !i10b 1
 vpipeif
 VTHKGP<dddPQUg<ZZV_3NK1
 r1
 31
-I=a0@PFLdZKG4Ooa=C[AL>2
+I8<mBW?X>[g]KA]^hHnLC91
 R9
-w1556704341
+w1556777020
 8D:/CoDWork/PipelineCPU/pipeif.v
 FD:/CoDWork/PipelineCPU/pipeif.v
 L0 1
 R4
 R8
 !s85 0
-!s100 jJnC<:8;:T@8[7=6R6kV43
+!s100 9U@80khQgXQIACUGizI__2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeif.v|
-!s108 1556715309.962000
+!s108 1556778945.115000
 !s107 D:/CoDWork/PipelineCPU/pipeif.v|
 !i10b 1
 vpipeimem
@@ -451,7 +451,7 @@ r1
 R8
 !s100 [EgX:OoU6MRIWc]@4;H2:2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeimem.v|
-!s108 1556715310.126000
+!s108 1556778945.313000
 !s107 D:/CoDWork/PipelineCPU/pipeimem.v|
 !i10b 1
 !s85 0
@@ -470,7 +470,7 @@ R8
 !s85 0
 !s100 Km;?F2TleONj_DoDIb:Si0
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipeir.v|
-!s108 1556715310.318000
+!s108 1556778945.474000
 !s107 D:/CoDWork/PipelineCPU/pipeir.v|
 !i10b 1
 vpipelinedcpu
@@ -479,7 +479,7 @@ r1
 31
 IedOKWQTXHXGaLNQ6O3[RE2
 R9
-w1556712305
+w1556776900
 8D:/CoDWork/PipelineCPU/pipelinedcpu.v
 FD:/CoDWork/PipelineCPU/pipelinedcpu.v
 L0 1
@@ -488,7 +488,7 @@ R8
 !s85 0
 !s100 LCg9APJ6FRETe<`D0T@:]0
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipelinedcpu.v|
-!s108 1556715310.539000
+!s108 1556778945.690000
 !s107 D:/CoDWork/PipelineCPU/pipelinedcpu.v|
 !i10b 1
 vpipemem
@@ -505,7 +505,7 @@ r1
 R8
 !s100 _2_Uj]FeW1gilVD3XUWB=2
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipemem.v|
-!s108 1556715310.777000
+!s108 1556778945.930000
 !s107 D:/CoDWork/PipelineCPU/pipemem.v|
 !i10b 1
 !s85 0
@@ -524,7 +524,7 @@ R8
 !s85 0
 !s100 RgFafZ78j`i1z^9[RIL?42
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipemwreg.v|
-!s108 1556715311.001000
+!s108 1556778946.147000
 !s107 D:/CoDWork/PipelineCPU/pipemwreg.v|
 !i10b 1
 vpipepc
@@ -542,25 +542,25 @@ R8
 !s85 0
 !s100 b3[KbG82o:??9NH]1z_;d1
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/pipepc.v|
-!s108 1556715311.196000
+!s108 1556778946.370000
 !s107 D:/CoDWork/PipelineCPU/pipepc.v|
 !i10b 1
 vregfile
 VHL?YD<z4Tlb1gm`0^XW@D2
 r1
 31
-IMe^fBe7I<S@AVN`<hd;5I3
+IGEO;lW8HJShenfV=4[NI82
 R9
-w1556707941
+w1556778916
 8D:/CoDWork/PipelineCPU/regfile.v
 FD:/CoDWork/PipelineCPU/regfile.v
 L0 1
 R4
 R8
 !s85 0
-!s100 ZSmo<@eUR<c;?67ESHzI>3
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/regfile.v|
-!s108 1556715311.369000
+!s100 OYF0O[RGJ`@:I1_6TIc3z3
+!s108 1556778946.936000
 !s107 D:/CoDWork/PipelineCPU/regfile.v|
 !i10b 1
 vRF
@@ -597,27 +597,27 @@ R8
 !s85 0
 !s100 7EfBHVlc>71aV<Wbc?9iF3
 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/sccomp.v|
-!s108 1556715311.545000
+!s108 1556778947.124000
 !s107 D:/CoDWork/PipelineCPU/sccomp.v|
 !i10b 1
 vsccomp_tb
 VciK9E@b07zQnz0QWN@GCk0
 r1
 31
-IBh<0a<;e<@_B:IBGd4lE52
+II125EE:PFc7jnN2RG2?BS2
 R9
-w1556708502
-8D:/CoDWork/PipelineCPU/sccomp_tb.v
-FD:/CoDWork/PipelineCPU/sccomp_tb.v
+w1556776969
+8D:\CoDWork\PipelineCPU\sccomp_tb.v
+FD:\CoDWork\PipelineCPU\sccomp_tb.v
 L0 3
 R4
 R8
 !s85 0
-!s100 _3lKjW>4Mf7fHb3B<U?3B1
-!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipelineCPU/sccomp_tb.v|
+!s100 K>lIb@mR>hOaVedD^RVa72
+!s90 -reportprogress|300|-work|work|-vopt|D:\CoDWork\PipelineCPU\sccomp_tb.v|
 !i10b 1
-!s108 1556715311.737000
-!s107 D:/CoDWork/PipelineCPU/sccomp_tb.v|
+!s108 1556778947.367000
+!s107 D:\CoDWork\PipelineCPU\sccomp_tb.v|
 vsccpu
 I9E0C?S2H:f`7iS1ZVR<<]3
 V2nlHBHNd:OILV4c`<oPFP3

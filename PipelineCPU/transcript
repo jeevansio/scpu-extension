@@ -1,0 +1,407 @@
+# Reading D:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile D:/CoDWork/PipelineCPU/PipelineCPU.mpf 
+# Loading project PipelineCPU
+# Compile of alu.v was successful.
+# Compile of cla.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of dffe32.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeidcu.v was successful.
+# Compile of pipeif.v failed with 1 errors.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of pipepc.v was successful.
+# Compile of regfile.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 22 compiles, 1 failed with 1 error. 
+# Compile of pipeif.v was successful.
+vsim -gui -novopt work.sccomp_tb
+# vsim -gui -novopt work.sccomp_tb 
+# Refreshing D:/CoDWork/PipelineCPU/work.sccomp_tb
+# Loading work.sccomp_tb
+# Refreshing D:/CoDWork/PipelineCPU/work.sccomp
+# Loading work.sccomp
+# Refreshing D:/CoDWork/PipelineCPU/work.pipelinedcpu
+# Loading work.pipelinedcpu
+# Refreshing D:/CoDWork/PipelineCPU/work.pipepc
+# Loading work.pipepc
+# Refreshing D:/CoDWork/PipelineCPU/work.dffe32
+# Loading work.dffe32
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeif
+# Loading work.pipeif
+# Refreshing D:/CoDWork/PipelineCPU/work.mux4
+# Loading work.mux4
+# Refreshing D:/CoDWork/PipelineCPU/work.cla32
+# Loading work.cla32
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_32
+# Loading work.cla_32
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_16
+# Loading work.cla_16
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_8
+# Loading work.cla_8
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_4
+# Loading work.cla_4
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_2
+# Loading work.cla_2
+# Refreshing D:/CoDWork/PipelineCPU/work.add
+# Loading work.add
+# Refreshing D:/CoDWork/PipelineCPU/work.g_p
+# Loading work.g_p
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeir
+# Loading work.pipeir
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeid
+# Loading work.pipeid
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeidcu
+# Loading work.pipeidcu
+# Refreshing D:/CoDWork/PipelineCPU/work.regfile
+# Loading work.regfile
+# Refreshing D:/CoDWork/PipelineCPU/work.mux2
+# Loading work.mux2
+# Refreshing D:/CoDWork/PipelineCPU/work.pipedereg
+# Loading work.pipedereg
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeexe
+# Loading work.pipeexe
+# Refreshing D:/CoDWork/PipelineCPU/work.alu
+# Loading work.alu
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeemreg
+# Loading work.pipeemreg
+# Refreshing D:/CoDWork/PipelineCPU/work.pipemwreg
+# Loading work.pipemwreg
+# Refreshing D:/CoDWork/PipelineCPU/work.dm
+# Loading work.dm
+# Refreshing D:/CoDWork/PipelineCPU/work.im
+# Loading work.im
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/prog_cnt/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/if_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/inst_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/id_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/de_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/exe_stage/*
+run 10000
+quit -sim
+# Compile of alu.v was successful.
+# Compile of cla.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of dffe32.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeidcu.v was successful.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of pipepc.v was successful.
+# Compile of regfile.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 22 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.sccomp_tb
+# vsim -gui -novopt work.sccomp_tb 
+# Refreshing D:/CoDWork/PipelineCPU/work.sccomp_tb
+# Loading work.sccomp_tb
+# Refreshing D:/CoDWork/PipelineCPU/work.sccomp
+# Loading work.sccomp
+# Refreshing D:/CoDWork/PipelineCPU/work.pipelinedcpu
+# Loading work.pipelinedcpu
+# Refreshing D:/CoDWork/PipelineCPU/work.pipepc
+# Loading work.pipepc
+# Refreshing D:/CoDWork/PipelineCPU/work.dffe32
+# Loading work.dffe32
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeif
+# Loading work.pipeif
+# Refreshing D:/CoDWork/PipelineCPU/work.mux4
+# Loading work.mux4
+# Refreshing D:/CoDWork/PipelineCPU/work.cla32
+# Loading work.cla32
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_32
+# Loading work.cla_32
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_16
+# Loading work.cla_16
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_8
+# Loading work.cla_8
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_4
+# Loading work.cla_4
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_2
+# Loading work.cla_2
+# Refreshing D:/CoDWork/PipelineCPU/work.add
+# Loading work.add
+# Refreshing D:/CoDWork/PipelineCPU/work.g_p
+# Loading work.g_p
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeir
+# Loading work.pipeir
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeid
+# Loading work.pipeid
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeidcu
+# Loading work.pipeidcu
+# Refreshing D:/CoDWork/PipelineCPU/work.regfile
+# Loading work.regfile
+# Refreshing D:/CoDWork/PipelineCPU/work.mux2
+# Loading work.mux2
+# Refreshing D:/CoDWork/PipelineCPU/work.pipedereg
+# Loading work.pipedereg
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeexe
+# Loading work.pipeexe
+# Refreshing D:/CoDWork/PipelineCPU/work.alu
+# Loading work.alu
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeemreg
+# Loading work.pipeemreg
+# Refreshing D:/CoDWork/PipelineCPU/work.pipemwreg
+# Loading work.pipemwreg
+# Refreshing D:/CoDWork/PipelineCPU/work.dm
+# Loading work.dm
+# Refreshing D:/CoDWork/PipelineCPU/work.im
+# Loading work.im
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/prog_cnt/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/if_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/inst_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/id_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/de_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/exe_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/em_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/mw_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/wb_stage/*
+run 10000
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/id_stage/RF/*
+restart -f
+run 100000
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+# dmem[0x      54] = 0x00000000,
+quit -sim
+# Compile of alu.v was successful.
+# Compile of cla.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of dffe32.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of mux.v was successful.
+# Compile of pipedereg.v was successful.
+# Compile of pipeemreg.v was successful.
+# Compile of pipeexe.v was successful.
+# Compile of pipeid.v was successful.
+# Compile of pipeidcu.v was successful.
+# Compile of pipeif.v was successful.
+# Compile of pipeimem.v was successful.
+# Compile of pipeir.v was successful.
+# Compile of pipelinedcpu.v was successful.
+# Compile of pipemem.v was successful.
+# Compile of pipemwreg.v was successful.
+# Compile of pipepc.v was successful.
+# Compile of regfile.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 22 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.sccomp_tb
+# vsim -gui -novopt work.sccomp_tb 
+# Refreshing D:/CoDWork/PipelineCPU/work.sccomp_tb
+# Loading work.sccomp_tb
+# Refreshing D:/CoDWork/PipelineCPU/work.sccomp
+# Loading work.sccomp
+# Refreshing D:/CoDWork/PipelineCPU/work.pipelinedcpu
+# Loading work.pipelinedcpu
+# Refreshing D:/CoDWork/PipelineCPU/work.pipepc
+# Loading work.pipepc
+# Refreshing D:/CoDWork/PipelineCPU/work.dffe32
+# Loading work.dffe32
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeif
+# Loading work.pipeif
+# Refreshing D:/CoDWork/PipelineCPU/work.mux4
+# Loading work.mux4
+# Refreshing D:/CoDWork/PipelineCPU/work.cla32
+# Loading work.cla32
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_32
+# Loading work.cla_32
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_16
+# Loading work.cla_16
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_8
+# Loading work.cla_8
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_4
+# Loading work.cla_4
+# Refreshing D:/CoDWork/PipelineCPU/work.cla_2
+# Loading work.cla_2
+# Refreshing D:/CoDWork/PipelineCPU/work.add
+# Loading work.add
+# Refreshing D:/CoDWork/PipelineCPU/work.g_p
+# Loading work.g_p
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeir
+# Loading work.pipeir
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeid
+# Loading work.pipeid
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeidcu
+# Loading work.pipeidcu
+# Refreshing D:/CoDWork/PipelineCPU/work.regfile
+# Loading work.regfile
+# Refreshing D:/CoDWork/PipelineCPU/work.mux2
+# Loading work.mux2
+# Refreshing D:/CoDWork/PipelineCPU/work.pipedereg
+# Loading work.pipedereg
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeexe
+# Loading work.pipeexe
+# Refreshing D:/CoDWork/PipelineCPU/work.alu
+# Loading work.alu
+# Refreshing D:/CoDWork/PipelineCPU/work.pipeemreg
+# Loading work.pipeemreg
+# Refreshing D:/CoDWork/PipelineCPU/work.pipemwreg
+# Loading work.pipemwreg
+# Refreshing D:/CoDWork/PipelineCPU/work.dm
+# Loading work.dm
+# Refreshing D:/CoDWork/PipelineCPU/work.im
+# Loading work.im
+run 100000
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 1] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[31] = 0x00000060,
+# r[31] = 0x00000014,
+# r[ 1] = 0xffaa0000,
+# r[ 1] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 1] = 0xffffffff,
+# r[ 1] = 0x00000000,
+# dmem[0x      54] = 0x0000000c,
+# r[ 4] = 0x00000000,
+# r[ 5] = 0x0000000c,
+# r[ 5] = 0x00000018,
+# r[ 4] = 0x00000000,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 7] = 0x00000000,
+# dmem[0x      50] = 0x00000000,
+# r[ 2] = 0x00000000,
+# r[ 2] = 0x00000001,
+# dmem[0x      54] = 0x0000000c,
+# r[ 7] = 0x0000000c,
+# dmem[0x      50] = 0x0000000c,
+# r[ 6] = 0x0000000c,
+# r[ 6] = 0x00000018,
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/prog_cnt/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/inst_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/if_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/id_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/de_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/exe_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/em_reg/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/mw_stage/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/wb_stage/*
+restart -f
+run 1000000
+# r[ 2] = 0x00000005,
+# r[ 3] = 0x0000000c,
+# r[ 1] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[31] = 0x00000060,
+# r[31] = 0x00000014,
+# r[ 1] = 0xffaa0000,
+# r[ 1] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 1] = 0xffffffff,
+# r[ 1] = 0x00000000,
+# dmem[0x      54] = 0x0000000c,
+# r[ 4] = 0x00000000,
+# r[ 5] = 0x0000000c,
+# r[ 5] = 0x00000018,
+# r[ 4] = 0x00000000,
+# r[ 5] = 0x00000000,
+# r[ 4] = 0x00000000,
+# r[ 7] = 0x00000000,
+# r[ 7] = 0x00000000,
+# dmem[0x      50] = 0x00000000,
+# r[ 2] = 0x00000000,
+# r[ 2] = 0x00000001,
+# dmem[0x      54] = 0x0000000c,
+# r[ 7] = 0x0000000c,
+# dmem[0x      50] = 0x0000000c,
+# r[ 6] = 0x0000000c,
+# r[ 6] = 0x00000018,

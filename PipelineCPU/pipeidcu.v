@@ -50,8 +50,8 @@ module pipeidcu (mwreg, mrn, ern, ewreg, em2reg, mm2reg, rsrtequ, func, op, rs, 
    wire i_j    = ~op[5]&~op[4]&~op[3]&~op[2]& op[1]&~op[0];  // j
    wire i_jal  = ~op[5]&~op[4]&~op[3]&~op[2]& op[1]& op[0];  // jal
 
-   wire i_rs = i_add | i_sub | i_and | i_or | i_jr | i_addi | i_andi | i_ori | i_lw | i_sw | i_beq | i_bne;
-   wire i_rt = i_add | i_sub | i_and | i_or | i_sll | i_srl | i_sw | i_beq | i_bne;
+   wire i_rs = i_add | i_sub | i_and | i_or | i_jr | i_addi | i_andi | i_ori | i_lw | i_sw | i_beq | i_bne | i_slt | i_sltu | i_addu | i_subu | i_nor | i_jalr | i_slti;
+   wire i_rt = i_add | i_sub | i_and | i_or | i_sll | i_srl | i_sw | i_beq | i_bne | i_sllv | i_srlv | i_slt | i_sltu | i_addu | i_subu | i_nor;
 
   assign nostall = ~(ewreg & em2reg & (ern != 0) & (i_rs & (ern == rs) | i_rt & (ern == rt)));
   

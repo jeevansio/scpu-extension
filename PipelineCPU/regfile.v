@@ -9,7 +9,7 @@ module regfile (rna, rnb, d, wn, we, clk, clrn, qa, qb);
     assign qb = (rnb == 0) ? 0 : register [rnb];
 
     always @(posedge clk or posedge clrn)
-        if (clrn == 0) begin
+        if (clrn == 1) begin
             for (i = 1; i < 32; i = i+1)
                 register[i] <= 0;
         end else if ((wn != 0) && we) begin
