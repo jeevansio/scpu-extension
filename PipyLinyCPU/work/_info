@@ -1,0 +1,384 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CoDWork\PipyLinyCPU
+valu
+VW1H8`<zcXiLKMd8Hi_iC>1
+r1
+31
+IFcbB`]FL7ea_`47WZ=i6i1
+Z1 dD:\CoDWork\PipyLinyCPU
+w1556888633
+8D:/CoDWork/PipyLinyCPU/alu.v
+FD:/CoDWork/PipyLinyCPU/alu.v
+L0 3
+Z2 OL;L;10.1c;51
+Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!s100 :P41]k:dSz]hDb=zMUULh0
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/alu.v|
+!s108 1556626757.994000
+!s107 ctrl_encode_def.v|D:/CoDWork/PipyLinyCPU/alu.v|
+!i10b 1
+vdffe32
+V6]Tk:7m18<;Eoi?;I3VNB3
+r1
+31
+IV]c^fT0n0PM:Mgj5lOh662
+R1
+Z4 w1556887672
+8D:/CoDWork/PipyLinyCPU/dffe32.v
+FD:/CoDWork/PipyLinyCPU/dffe32.v
+L0 1
+R2
+R3
+!s85 0
+!s100 N8dHQhNVhb6m`XT3AjhgE0
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/dffe32.v|
+!s108 1556626758.271000
+!s107 D:/CoDWork/PipyLinyCPU/dffe32.v|
+!i10b 1
+vdm
+VQ5kzjohU1HQB?iGHI7LOU0
+r1
+31
+InI[K=;NPNb;n_jf3c5]K@3
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/dm.v
+FD:/CoDWork/PipyLinyCPU/dm.v
+L0 3
+R2
+R3
+!s85 0
+!s100 IXTYoz38f55R^6aX91j_a1
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/dm.v|
+!s108 1556626758.439000
+!s107 D:/CoDWork/PipyLinyCPU/dm.v|
+!i10b 1
+vim
+VkoA3ibJYjK6f9b:B2VJKK0
+r1
+!s85 0
+31
+I?zCWkkHaE<l5JEEzO0A;W2
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/im.v
+FD:/CoDWork/PipyLinyCPU/im.v
+L0 3
+R2
+R3
+!s100 FdN`jFl?_X;be_6^C^SZY2
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/im.v|
+!s108 1556626758.614000
+!s107 D:/CoDWork/PipyLinyCPU/im.v|
+!i10b 1
+vmux16
+I<2@lfV3WE]KICJ<DYAM:J1
+V`6=HBldE>cXC;m]K0;QI>0
+R1
+R4
+Z5 8D:/CoDWork/PipyLinyCPU/mux.v
+Z6 FD:/CoDWork/PipyLinyCPU/mux.v
+L0 71
+R2
+r1
+31
+Z7 !s108 1556626758.833000
+Z8 !s107 D:/CoDWork/PipyLinyCPU/mux.v|
+Z9 !s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/mux.v|
+R3
+!s100 2YMLheCTVhcIUVdUoN<S:1
+!i10b 1
+!s85 0
+vmux2
+VT8RWJBjAIeM]>7U=5kBkT1
+r1
+31
+I8azhg3ENZEni:4^g8REOM3
+R1
+R4
+R5
+R6
+L0 2
+R2
+R7
+R8
+R9
+R3
+!s85 0
+!s100 lz@g^bBSWZLh;]9KD2mJ02
+!i10b 1
+vmux4
+V@m74j;^3XFJ7>OzQXh6V`0
+r1
+31
+Ic;LY`Xml4HejKb^5BfgVi3
+R1
+R4
+R5
+R6
+L0 15
+R2
+R7
+R8
+R9
+R3
+!s85 0
+!s100 T27BlcDRh:d]A^d;jiUQ32
+!i10b 1
+vmux8
+I4eoG<lfoDmG?iiCkl3_Hh1
+VOh>X<_n?620Z_^H7^I9KH2
+R1
+R4
+R5
+R6
+L0 40
+R2
+r1
+31
+R7
+R8
+R9
+R3
+!s100 `Q?ToezILOZ6dP>7O=`Rg1
+!i10b 1
+!s85 0
+vpipecomp
+V7USKbOBeikjNmG2EUd_Ck2
+r1
+31
+I:P7^agc9efLZ0AcfHX=B^1
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipecomp .v
+FD:/CoDWork/PipyLinyCPU/pipecomp .v
+L0 1
+R2
+R3
+!s85 0
+!s100 I1T>VD4[JSZOP4XjFTc?]3
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipecomp .v|
+!s108 1556626759.308000
+!s107 D:/CoDWork/PipyLinyCPU/pipecomp .v|
+!i10b 1
+vpipecomp_tb
+V_]?Pnb84Lg<D<G6^D`5b30
+r1
+31
+IBZ`0aO0VHR0kbo218I@;;1
+R1
+w1556889918
+8D:/CoDWork/PipyLinyCPU/pipecomp_tb.v
+FD:/CoDWork/PipyLinyCPU/pipecomp_tb.v
+L0 2
+R2
+R3
+!s85 0
+!s100 c>Plno^CMj_@ZRd0z:ULd2
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipecomp_tb.v|
+!s108 1556626759.536000
+!s107 D:/CoDWork/PipyLinyCPU/pipecomp_tb.v|
+!i10b 1
+vpipecpu
+V4XLI6cC?:Lbbe4GKA`maL3
+r1
+31
+IPoZK;ZHJSZ2eMaLd4=@=f2
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipecpu.v
+FD:/CoDWork/PipyLinyCPU/pipecpu.v
+L0 1
+R2
+R3
+!s85 0
+!s100 igG=QX;NHV4eo^>^7oJga3
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipecpu.v|
+!s108 1556626759.749000
+!s107 D:/CoDWork/PipyLinyCPU/pipecpu.v|
+!i10b 1
+vpipedereg
+VdA2kF8^VT;Z5Bh8F016Gh1
+r1
+31
+ICgRjje?WBUZEnGj<FagRT3
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipedereg.v
+FD:/CoDWork/PipyLinyCPU/pipedereg.v
+L0 1
+R2
+R3
+!s85 0
+!s100 AT3zhj64R]hi6cB_9gH]S2
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipedereg.v|
+!s108 1556626759.931000
+!s107 D:/CoDWork/PipyLinyCPU/pipedereg.v|
+!i10b 1
+vpipeemreg
+Vk_22U9ldAB6ez[a^V`?RJ0
+r1
+31
+I_2gU^kgc7<aIOV4:d31nP0
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipeemreg.v
+FD:/CoDWork/PipyLinyCPU/pipeemreg.v
+L0 1
+R2
+R3
+!s85 0
+!s100 L[>[1i`CEj^VncAh>:K0P1
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipeemreg.v|
+!s108 1556626760.187000
+!s107 D:/CoDWork/PipyLinyCPU/pipeemreg.v|
+!i10b 1
+vpipeexe
+V5lbDPf9VM[ZRRDLBF1OUH1
+r1
+31
+I8WRLmP9ORo2BIDGG4]d][0
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipeexe.v
+FD:/CoDWork/PipyLinyCPU/pipeexe.v
+L0 1
+R2
+R3
+!s85 0
+!s100 bokOM]S]dzP7^mlc7^UfE0
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipeexe.v|
+!s108 1556626760.439000
+!s107 D:/CoDWork/PipyLinyCPU/pipeexe.v|
+!i10b 1
+vpipeid
+Vbnh9^hXKm`:JOdUNEFbC<2
+r1
+31
+IZL:V>7@88;=TWT2;G=3hV3
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipeid.v
+FD:/CoDWork/PipyLinyCPU/pipeid.v
+L0 1
+R2
+R3
+!s85 0
+!s100 _KH_oHIE2Yo6k^:jVoDYF0
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipeid.v|
+!s108 1556626760.659000
+!s107 D:/CoDWork/PipyLinyCPU/pipeid.v|
+!i10b 1
+vpipeidcu
+V^RZCSzz[>b7c4ejBKIA5k0
+r1
+31
+IP6_NPAi@06CE;n<cQZWKK1
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipeidcu.v
+FD:/CoDWork/PipyLinyCPU/pipeidcu.v
+L0 1
+R2
+R3
+!s85 0
+!s100 @o`zQJBAhHE[ohc2Qm@I21
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipeidcu.v|
+!s108 1556626760.865000
+!s107 D:/CoDWork/PipyLinyCPU/pipeidcu.v|
+!i10b 1
+vpipeif
+VTHKGP<dddPQUg<ZZV_3NK1
+r1
+31
+Iz_UOQ9ah]mi>[cQDW?L^42
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipeif.v
+FD:/CoDWork/PipyLinyCPU/pipeif.v
+L0 1
+R2
+R3
+!s85 0
+!s100 79B=dUNmbYbYaA:>jHoQ53
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipeif.v|
+!s108 1556626761.064000
+!s107 D:/CoDWork/PipyLinyCPU/pipeif.v|
+!i10b 1
+vpipeir
+VNA3idRg?g9ELEa<lVniF40
+r1
+31
+ImUhe^:F9h[<zTJe`4Wm>_1
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipeir.v
+FD:/CoDWork/PipyLinyCPU/pipeir.v
+L0 1
+R2
+R3
+!s85 0
+!s100 63S351M96h8I9AWc:2lW?3
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipeir.v|
+!s108 1556626761.268000
+!s107 D:/CoDWork/PipyLinyCPU/pipeir.v|
+!i10b 1
+vpipemwreg
+V?_QTchRGQVg<><eg=A6g32
+r1
+31
+I@X5CPLnl6l<BcF83Y60F`0
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipemwreg.v
+FD:/CoDWork/PipyLinyCPU/pipemwreg.v
+L0 1
+R2
+R3
+!s85 0
+!s100 PWGB9SbeH9^Nb:DjB8@>f2
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipemwreg.v|
+!s108 1556626761.494000
+!s107 D:/CoDWork/PipyLinyCPU/pipemwreg.v|
+!i10b 1
+vpipepc
+VfP<W55?cZe9QVU<ZPCNTh2
+r1
+31
+I@bn`D:Rao`8N[3eXVMfIk3
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/pipepc.v
+FD:/CoDWork/PipyLinyCPU/pipepc.v
+L0 1
+R2
+R3
+!s85 0
+!s100 7ggl6ojJ^D[0WdM3Lm0CM2
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/pipepc.v|
+!s108 1556626761.700000
+!s107 D:/CoDWork/PipyLinyCPU/pipepc.v|
+!i10b 1
+vRF
+VEWJn__zm[8SS3Z@zFLOZT3
+r1
+31
+If<<lT2;]U>IV_65W^Q_i73
+R1
+R4
+8D:/CoDWork/PipyLinyCPU/RF.v
+FD:/CoDWork/PipyLinyCPU/RF.v
+L0 1
+R2
+R3
+n@r@f
+!s85 0
+!s100 PQBSgc3MF2Y_dIcGZn_gK1
+!s90 -reportprogress|300|-work|work|-vopt|D:/CoDWork/PipyLinyCPU/RF.v|
+!i10b 1
+!s108 1556626761.898000
+!s107 D:/CoDWork/PipyLinyCPU/RF.v|
